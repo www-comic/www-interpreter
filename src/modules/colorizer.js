@@ -12,7 +12,7 @@ const api = {
         if(!text) return '';
         const GNOME_SPECIAL_NOUNS = [];
         const GNOME_SPECIAL_VERBS = [];
-        const GNOME_HONORIFICS = [];
+        const GNOME_HONORIFICS = [ 'qasha' ];
         const GNOME_MISPELLINGS = [];
         const GNOME_FOREIGN = [];
         const GNOME_KNOWN_NAMES = [];
@@ -23,7 +23,7 @@ const api = {
             let unknown = false;
             output += "<span class='ifd-text";
             if(GNOME_MISPELLINGS.includes(word)) output += ' ifd-error';
-            if(GNOME_FOREIGN.includes(word)) output += ' ifd-foriegn';
+            if(GNOME_FOREIGN.includes(word)) output += ' ifd-foreign';
             if(" .,/\\?:;0123456789[](){}|~`'\"+=_-".split('').includes(word)) {
                 output += ' ifd-noun';
             } else if(GNOME_SPECIAL_NOUNS.includes(word.toLowerCase())) {
@@ -31,7 +31,7 @@ const api = {
             } else if(GNOME_SPECIAL_VERBS.includes(word.toLowerCase())) {
                 output += ' ifd-verb';
             } else if('-san/-chan/-kun/-sana/-senpai'.split('/').includes(word.toLowerCase())) {
-                output += ' ifd-honorific ifd-foriegn'
+                output += ' ifd-honorific ifd-foreign'
             } else if(GNOME_KNOWN_NAMES.includes(word.toLowerCase())) {
                 output += ' ifd-proper-noun';
             } else if(GNOME_HONORIFICS.includes(word.toLowerCase())) {
