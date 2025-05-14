@@ -61,6 +61,7 @@ const api = {
                 output += ' ifd-proper-noun';
                 if(word[0].toUpperCase() != word[0]) {
                     unknown = true;
+                    output += ' ifd-warning';
                 }
             }
             output += '\'';
