@@ -21,7 +21,7 @@ const api = {
         let output = '';
         words.forEach(word => {
             let unknown = false;
-            output += "<span class=''ifd-text";
+            output += "<span class='ifd-text";
             if(GNOME_MISPELLINGS.includes(word)) output += ' ifd-error';
             if(GNOME_FOREIGN.includes(word)) output += ' ifd-foriegn';
             if(" .,/\\?:;0123456789[](){}|~`'\"+=_-".split('').includes(word)) {
