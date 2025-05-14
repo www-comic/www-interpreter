@@ -658,7 +658,7 @@ const ENGLISH_ADJECTIVES = [
     'cringy',
     'corny',
     'foreign',
-    'foriegn',
+    'foreign',
     'dead',
     'caring',
     'friendly',
@@ -1011,7 +1011,7 @@ const ENGLISH_MISTAKES = [
     'asasin',
     'fire fox',
     'googel',
-    'foriegn',
+    'foreign',
     'onichan',
     'onechan',
     '-onichan',
@@ -1019,7 +1019,7 @@ const ENGLISH_MISTAKES = [
     'gramatically'
 ];
 
-const ENGLISH_FORIEGN = [
+const ENGLISH_FOREIGN = [
     '-san',
     '-chan',
     '-kun',
@@ -1147,7 +1147,7 @@ module.exports = {
     ENGLISH_ADVERBS,
     ENGLISH_ALL,
     ENGLISH_EXCLAMATIONS,
-    ENGLISH_FORIEGN,
+    ENGLISH_FOREIGN,
     ENGLISH_HONORIFICS,
     ENGLISH_MISTAKES,
     ENGLISH_NOUNS,
