@@ -18,7 +18,7 @@ const api = {
         const GNOME_KNOWN_NAMES = [];
         const GNOME_SLANG = ['fq', 'fqq'];
         const words = text.match(/-kun|-chan|-san|-sana|-senpai|\w+|\s+|[^\w\s]/g);
-        const output = '';
+        let output = '';
         words.forEach(word => {
             let unknown = false;
             output += "<span class='ifd-text";
