@@ -10,7 +10,8 @@ const api = {
         return EU.generateColorizedHTMLForEnglish(text);
     }
 };
-if(require.async) {
+if(false) {
+    // testing
     require.async('@colorizer/english-dictionary').then(async (dict) => {
         EU = await require.async('@colorizer/english-utils')(dict);
         api.loaded = true;
