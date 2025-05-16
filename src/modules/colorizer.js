@@ -40,8 +40,8 @@ const api = {
                 output += ' ifd-exclamation'
             } else if(word.toLowerCase().endsWithAny([
                 'qaq',
-                'qasha',
                 'qacha',
+                'qazha',
                 'qe',
                 'qana',
                 'qashana',
